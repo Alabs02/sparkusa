@@ -217,7 +217,24 @@
                         </div>
                         <div class="support-caption">
                             <p class="pera-top">You are one step forward, click on the link shown below in other to deposit the required amount to your wallet</p>
-                            <a href="#" class="btn post-btn">I want to deposit</a>
+                            <!-- <a href="#" class="btn post-btn">I want to deposit</a> -->
+                            <form action="https://www.coinpayments.net/index.php" method="post">
+                                <input type="hidden" name="cmd" value="_pay">
+                                <input type="hidden" name="reset" value="1">
+                                <input type="hidden" name="merchant" value="1b63aab00670ceb763f9b8abca92d220">
+                                <input type="hidden" name="item_name" value="Trade">
+                                <input type="hidden" name="invoice" value="Deposited Successfully">
+                                <input type="hidden" name="currency" value="BTC">
+                                <input type="hidden" name="amountf" value="0.05400000">
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="allow_quantity" value="0">
+                                <input type="hidden" name="want_shipping" value="0">
+                                <input type="hidden" name="success_url" value="https://alabs02.github.io/sparkusa/dashboard.html">
+                                <input type="hidden" name="cancel_url" value="https://alabs02.github.io/sparkusa/payment.html">
+                                <input type="hidden" name="allow_extra" value="1">
+                                <input type="image" src="https://www.coinpayments.net/images/pub/buynow-grey.png"
+                                    alt="Buy Now with CoinPayments.net">
+                            </form>
                         </div>
                     </div>
                 </div>
