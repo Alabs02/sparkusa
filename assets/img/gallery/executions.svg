@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <g data-name="Layer 2">
+    <g data-name="Module 1">
+      <path d="M32 2A30 30 0 1 1 2 32 30 30 0 0 1 32 2m0-2a32 32 0 1 0 32 32A32 32 0 0 0 32 0z" fill="#0855b4"/>
+      <path d="M37.2 26l4.1-12H28.4l-8.1 23.4h9L23.5 54h.2l22.6-28zm-6 12l.9-2.6h-9L29.8 16h8.7l-3.2 9.3-1 2.6h7.8L29 44z" fill="#0ab45b"/>
+    </g>
+  </g>
+</svg>
