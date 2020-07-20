@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Upload Tutorials</title>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #uploader {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+     
+    <form>
+        <div class="form-group">
+            <progress value="0" max="100" id="uploader">0%</progress><br>
+            <input type="file" value="upload" id="fileBtn">
+        </div>
+    </form>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script> -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script> -->
+    
+    <script>
+
+        var firebaseConfig = {
+            apiKey: "AIzaSyAwezY8LCWuJ1cPSEtxSmQMPKFbQscpWlc",
+            authDomain: "spaktrade-9aaa9.firebaseapp.com",
+            databaseURL: "https://spaktrade-9aaa9.firebaseio.com",
+            projectId: "spaktrade-9aaa9",
+            storageBucket: "spaktrade-9aaa9.appspot.com",
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        console.log()
+
+        // Make auth and firestore
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        const storageRef = firebase.storage().ref();
+        const storage = firebase.storage;
+    </script>
+    <script src="./script/upload.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
